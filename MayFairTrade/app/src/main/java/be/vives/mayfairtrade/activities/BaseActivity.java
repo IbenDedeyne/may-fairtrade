@@ -84,18 +84,16 @@ public abstract class BaseActivity extends AppCompatActivity implements Navigati
 		// Handle navigation view item clicks here.
 		int id = item.getItemId();
 
-		if (id == R.id.nav_camera) {
-			// Handle the camera action
-		} else if (id == R.id.nav_gallery) {
+		switch (id) {
+			case R.id.nav_map:
+				// Handle the camera action
+				break;
+			case R.id.nav_list:
 
-		} else if (id == R.id.nav_slideshow) {
+				break;
+			default:
 
-		} else if (id == R.id.nav_manage) {
-
-		} else if (id == R.id.nav_share) {
-
-		} else if (id == R.id.nav_send) {
-
+				break;
 		}
 
 		drawer.closeDrawer(GravityCompat.START);
